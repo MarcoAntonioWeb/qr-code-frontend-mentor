@@ -1,0 +1,62 @@
+/***Configuração Geral *****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+   --cor-fundo:hsl(212, 45%, 89%);
+   --cor-container: hsl(0, 0%, 100%);
+   --cor-text: hsl(220, 15%, 55%);
+}
+
+body {
+    background: var(--cor-fundo);
+}
+
+.container{
+    background: var(--cor-container);
+    width: 100%;
+    max-width: 350px;
+
+/**** Vai centralizar o card *****/
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.container .text-negrito {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    padding: 20px 0 15px 0;
+}
+
+.container .text-gred {
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--cor-text);
+}
+
+.qr-code img {
+    width: 310px;
+    border-radius: 10px;
+}
+/***** Responsividade mobile ******/
+@media (max-width: 320px) {
+    .qr-code img {
+    width: 280px;
+   } 
+
+}
+
+.attribution { font-size: 11px; text-align: center; display: none;}
+.attribution a { color: hsl(228, 45%, 44%); }
